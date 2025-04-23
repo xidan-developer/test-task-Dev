@@ -1,11 +1,7 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <main>
-    hello world
-  </main>
+  <main>test git</main>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>
