@@ -5,5 +5,8 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-essential',
     '@vue/eslint-config-airbnb-with-typescript'
-  ]
+  ],
+  rules: {
+    'no-console': 'off'
+  }
 }
