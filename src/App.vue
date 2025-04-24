@@ -25,7 +25,7 @@ const findClosestPoint = (clickCoords: number[], polygon: LngLat[][]): LngLat[] 
   let minDistance = Infinity;
 
   polygon.forEach((point: LngLat[]) => {
-    console.log(point)
+    console.log(point);
     const distance = ymaps.coordSystem.geo.getDistance(clickCoords, point);
 
     if (distance < minDistance) {
@@ -83,7 +83,7 @@ const init = (): void => {
 
     const polygon: LngLat[][] = mkadPolygon.geometry.getCoordinates()[0];
 
-    const closestPoint: LngLat[]  = findClosestPoint(clickCoords, polygon);
+    const closestPoint: LngLat[] = findClosestPoint(clickCoords, polygon);
 
     const straightDistance = ymaps.coordSystem.geo.getDistance(clickCoords, closestPoint);
 
@@ -104,7 +104,6 @@ const init = (): void => {
       mapStateAutoApply: false,
       routingMode: 'auto',
     }).then((route: any) => {
-
       mapObject.geoObjects.add(placemark);
       mapObject.geoObjects.add(straightLine);
       mapObject.geoObjects.add(route);

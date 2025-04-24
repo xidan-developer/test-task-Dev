@@ -12,7 +12,7 @@ const useClickStore = defineStore('clickStore', () => {
     clicks,
     (newClicks: ClickType[]) => {
       localStorage.setItem('polygonClicks', JSON.stringify(newClicks));
-    }
+    },
   );
 
   return {
